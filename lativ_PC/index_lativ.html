@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<title>lativ pc</title>
+<style type="text/css">
+body {
+	margin: 0px;
+	padding: 0px;
+}
+#all {
+	height: auto;
+	width: 1180px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#header {
+	height: 105px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+#slider {
+	height: 557px;
+	width: 100%;
+}
+#box_L {
+	height: 70px;
+	width: 70px;
+	padding-top: 25px;
+	padding-bottom: 10px;
+	float: left;
+}
+#logo {
+	background-color: #563636;
+	height: 70px;
+	width: 70px;
+}
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+#box_M {
+	height: 20px;
+	width: 759px;
+	float: left;
+	padding-top: 67px;
+	padding-bottom: 18px;
+}
+#menu {
+	height: 20px;
+	width: 665px;
+	float: right;
+}
+#box_R {
+	height: 72px;
+	width: 351px;
+	float: left;
+	padding-top: 25px;
+	padding-bottom: 8px;
+}
+#Utitle {
+	float: right;
+	height: 26px;
+	width: 296px;
+	margin-bottom: 23px;
+}
+.logo {
+	font-size: 36px;
+	color: #FFFFFF;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+#Utitle_d {
+	height: 13px;
+	width: 236px;
+	clear: right;
+	float: right;
+}
+li {
+	list-style-type: none;
+	float: left;
+	height: 17px;
+	width: 110px;
+}
+.groop {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 20px;
+	color: #706e6c;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #333;
+}
+#menu li:nth-child(6) {
+	border-right-style: none;
+}
+input[type=text] {
+	width: 160px;
+	-webkit-transition: width 0.4s ease-in-out;
+	transition: width 0.4s ease-in-out;
+}
+input[type=text]:focus {
+	width: 100%;
+}
+.smallword {
+	font-size: 16px;
+	color: #706e6c;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #333;
+	height: 16px;
+	width: 79px;
+}
+.smallword_t {
+	font-size: 12px;
+	color: #706e6c;
+	border-right-width: 1px;
+	border-right-style: dashed;
+	border-right-color: #333;
+	height: 16px;
+	width: 76px;
+}
+#Utitle_d li:nth-child(3) {
+	border-right-style: none;
+}
+.w3-content {
+	max-width: 100%;
+	margin: auto;
+}
+</style>
+</head>
+
+<body>
+<div id="all">
+  <div id="header">
+    <div id="box_L">
+      <div class="logo" id="logo">lativ</div>
+    </div>
+    <div id="box_M">
+      <div id="menu" align="center">
+        <ul>
+          <li class="groop">WOMEN</li>
+          <li class="groop">MEN</li>
+          <li class="groop">KIDS</li>
+          <li class="groop">BABY</li>
+          <li class="groop">SPORT</li>
+          <li class="groop">STYLE</li>
+        </ul>
+      </div>
+    </div>
+    <div id="box_R">
+      <div id="Utitle" align="center">
+        <ul>
+          <li class="smallword">簡體中文</li>
+          <input type="text" name="search" placeholder="Search..">
+        </ul>
+      </div>
+      <div id="Utitle_d" align="center">
+        <ul>
+          <li class="smallword_t">訂閱電子報</li>
+          <li class="smallword_t">會員登入</li>
+          <li class="smallword_t">0個商品</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="slider">
+    <div class="w3-content w3-display-container"> <img class="mySlides" src="lativ_pic/pic1.jpg" style="width:100%"> <img class="mySlides" src="lativ_pic/pic2.jpg" style="width:100%"> <img class="mySlides" src="lativ_pic/pic3.jpg" style="width:100%">
+      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+  </div>
+  <script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script> 
+</div>
+</body>
+</html>

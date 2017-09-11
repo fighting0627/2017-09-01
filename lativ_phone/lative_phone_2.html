@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<title>lativ_phone</title>
+<style type="text/css">
+body {
+	margin: 0px;
+	padding: 0px;
+}
+#all {
+	height: auto;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+#header {
+	height: 95px;
+	width: 100%;
+}
+#logo {
+	font-size: 50px;
+	color: #000;
+	height: 90px;
+	width: 10%;
+	float: left;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	margin-top: auto;
+	margin-right: 30px;
+	margin-left: 20px;
+}
+#menu {
+	background-color: #FFF;
+	height: 45px;
+	width: 100%;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: double;
+	border-bottom-style: double;
+	border-top-color: #666;
+	border-bottom-color: #666;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+#content {
+	background-color: #FFF;
+	height: 619px;
+	width: 100%;
+	padding-top: 25px;
+	padding-bottom: 14px;
+}
+#slider {
+	height: 387px;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+#attention {
+	height: 87px;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 30px;
+}
+#doc {
+	height: 70px;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	position: absolute;
+	margin-top: 50px;
+}
+.smallword {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #FFF;
+}
+input[type=text] {
+	width: 600px;
+	box-sizing: border-box;
+	border: 5px solid #ccc;
+	border-radius: 4px;
+	font-size: 16px;
+	background-color: white;
+	background-image: url('searchicon.png');
+	background-position: 10px 10px;
+	background-repeat: no-repeat;
+	-webkit-transition: width 0.4s ease-in-out;
+	transition: width 0.4s ease-in-out;
+	float: left;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 10px;
+	margin-top: 20px;
+}
+li {
+	list-style-type: none;
+	float: left;
+	font-size: 22px;
+	width: 16.5%;
+	font-family: Verdana, Geneva, sans-serif;
+	text-transform: none;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+ul {
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+.mySlides {
+	display: none
+}
+.w3-left, .w3-right, .w3-badge {
+	cursor: pointer
+}
+.w3-badge {
+	height: 13px;
+	width: 13px;
+	padding: 0
+}
+#MobleContent {
+	height: 50px;
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 30px;
+}
+</style>
+</head>
+
+<body>
+<div id="all">
+<div id="header">
+  <div id="logo" align="center">lativ</div>
+  <form>
+    <input type="text" name="search" placeholder="Search..">
+    </input>
+  </form>
+</div>
+<div id="menu">
+  <ul align="center">
+    <li>WOMEN</li>
+    <li>MEN</li>
+    <li>KIDS</li>
+    <li>BABY</li>
+    <li>SPORT</li>
+    <li>SALE</li>
+  </ul>
+</div>
+<div id="content">
+  <div id="slider">
+    <div class="w3-content w3-display-container" style="max-width:100%"> <img class="mySlides" src="LATIV_PIC2/PIC1.gif" style="width:100%"> <img class="mySlides" src="LATIV_PIC2/PIC2.jpg" style="width:100%"> <img class="mySlides" src="LATIV_PIC2/PIC3.jpg" style="width:100%">
+      <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+        <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+        <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span> <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span> <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span> </div>
+    </div>
+    <script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script> 
+  </div>
+  <div id="attention"><img src="LATIV_PIC2/PIC_A.gif" width="100%" height="150" /></div>
+  <div id="MobleContent">
+    <table width="100%" align="center">
+      <tr>
+        <td width="25%"><img src="LATIV_PIC2/icon_blog_170427_TW.gif" width="116" height="136" /></td>
+        <td width="25%"><img src="LATIV_PIC2/icon_wanted_170330_TW.gif" width="116" height="136" /></td>
+        <td width="25%"><img src="LATIV_PIC2/icon_fb_161121_TW.gif" width="116" height="136" /></td>
+        <td width="25%"><img src="LATIV_PIC2/icon_line_161121_TW.gif" width="116" height="136" /></td>
+      </tr>
+    </table>
+  </div>
+  <div id="doc">
+    <table width="100%" border="1px" align="center">
+      <tr>
+        <td width="20%" align="center" valign="middle" bgcolor="#442D24" class="smallword" id="share">分享</td>
+        <td width="20%" align="center" valign="middle" bgcolor="#442D24" class="smallword" id="comment">評價</td>
+        <td width="20%" align="center" valign="middle" bgcolor="#442D24" class="smallword" id="home">首頁</td>
+        <td width="20%" align="center" valign="middle" bgcolor="#442D24" class="smallword" id="member">會員</td>
+        <td width="20%" align="center" valign="middle" bgcolor="#442D24" class="smallword" id="check-out">結帳</td>
+      </tr>
+    </table>
+  </div>
+</div>
+</body>
+</html>
